@@ -37,16 +37,17 @@ Kotlin has plugins for JavaScript libraries like [JQuery](https://jquery.com/) a
 surprisingly easy to build your own plugins for other JavaScript libraries, or extend those Kweb already
 supports.
 
+Kotlin is currently **experimental**, please play with it, give us feedback, join our development effort, but remember that it is still a few months away (June 2017) from being suitable for non-experimental use.
+
 #### Features
 * Build websites in Kotlin
-* Interact to the user just like powerful but complex JavaScript frameworks
-  like React or Angular
-* Makes the barrier between web-browser and web-server largely invisible
-* Seamlessly integrates to powerful JavaScript libraries like JQuery, MDL, and Bootstrap
+* Makes the barrier between web-browser and web-server largely invisible to the programmer
+* Seamlessly integrates with powerful JavaScript libraries like JQuery, Semantic-UI, and others
 * Update your web browser instantly in response to code changes
+* Bind DOM elements in the browser directly to persistent state on the server and have them update automatically (through the [observer](https://en.wikipedia.org/wiki/Observer_pattern) and [data mapper](https://en.m.wikipedia.org/wiki/Data_mapper_pattern) patterns, and following the [single source of truth](https://en.wikipedia.org/wiki/Single_source_of_truth) principle
 * Easy to add to an existing project, Kweb is just a library, it doesn't seek to tell you how your project should
   be organized
-  
+
 #### How does it work?
 Kweb keeps all of the logic server-side, and uses efficient websockets to communicate to web 
 browsers. We also take advantage of Kotlin's powerful new coroutines mechanism to efficiently handle
