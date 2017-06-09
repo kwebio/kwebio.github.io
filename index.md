@@ -44,7 +44,7 @@ Kotlin is currently **experimental**, please play with it, give us feedback, joi
 * Makes the barrier between web-browser and web-server largely invisible to the programmer
 * Seamlessly integrates with powerful JavaScript libraries like JQuery, Semantic-UI, and others
 * Update your web browser instantly in response to code changes
-* Bind DOM elements in the browser directly to persistent state on the server and have them update automatically (through the [observer](https://en.wikipedia.org/wiki/Observer_pattern) and [data mapper](https://en.m.wikipedia.org/wiki/Data_mapper_pattern) patterns, and following the [single source of truth](https://en.wikipedia.org/wiki/Single_source_of_truth) principle
+* Bind DOM elements in the browser directly to persistent state on the server and have them update automatically, through the [observer](https://en.wikipedia.org/wiki/Observer_pattern) and [data mapper](https://en.m.wikipedia.org/wiki/Data_mapper_pattern) patterns, and following the [single source of truth](https://en.wikipedia.org/wiki/Single_source_of_truth) principle)
 * Easy to add to an existing project, Kweb is just a library, it doesn't seek to tell you how your project should
   be organized
 
