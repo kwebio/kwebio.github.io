@@ -32,12 +32,12 @@ val day = doc.body.evaluate("$('#day').text()")
 database.update(BOOK).set(BOOK.DAY, day).execute()
 ```
 
-Kotlin has plugins for JavaScript libraries like [JQuery](https://jquery.com/) and 
-[others](https://github.com/sanity/kweb/tree/master/src/main/kotlin/com/github/kwebio/core/plugins).  It's also 
+Kweb has plugins for JavaScript libraries like [JQuery](https://jquery.com/) and 
+[others](https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/plugins).  It's also 
 surprisingly easy to build your own plugins for other JavaScript libraries, or extend those Kweb already
 supports.
 
-Kotlin is currently **experimental**, please play with it, give us feedback, join our development effort, but remember that it is still a few months away (June 2017) from being suitable for non-experimental use.
+Kweb is currently **experimental**, please play with it, give us feedback, join our development effort, but remember that it is still a few months away (June 2017) from being suitable for non-experimental use.
 
 #### Features
 * Build websites in Kotlin
