@@ -3,6 +3,8 @@ layout: default
 title: "Introduction to Kweb"
 ---
 
+![status experimental](https://img.shields.io/badge/status-experimental-orange.svg)
+
 1. TOC
 {:toc}
 
