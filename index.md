@@ -37,7 +37,8 @@ Kweb has plugins for JavaScript libraries like [JQuery](https://jquery.com/) and
 surprisingly easy to build your own plugins for other JavaScript libraries, or extend those Kweb already
 supports.
 
-![status experimental](https://img.shields.io/badge/status-experimental-orange.svg) Kweb is currently **experimental**, please play with it, give us feedback, join our development effort, but remember that it is still a few months away (June 2017) from being suitable for non-experimental use.
+![status experimental](https://img.shields.io/badge/status-experimental-orange.svg) 
+Kweb is currently **experimental**, please play with it, give us feedback, join our development effort, but remember that it is still a few months away (June 2017) from being suitable for non-experimental use.
 
 #### Features
 * Build websites in Kotlin
