@@ -43,25 +43,26 @@ asynchronicity, largly invisibly to the programmer.
 
 #### What does it look like?
 
-Here we create a simple "todo" list app:
+Here is the main code for a simple to-do list app, find the full app [here](https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo):
 
 ```kotlin
- Kweb(port = 8093, debug = true, plugins = listOf(semanticUIPlugin)) {
+fun main(args: Array<String>) {
+    // Starts a web server listening on port 8091
+    Kweb(port = 8093, debug = true, plugins = listOf(semanticUIPlugin)) {
         doc.body.new {
-            div(Style.outerContainer).new {
-                div(Style.innerContainer).new {
+            div(semantic.ui.three.column.centered.grid).new {
+                div(semantic.column).new {
+                    h1(Style.listHeadingStyle).text("Shopping list")
+
                     route(withGalimatiasUrlParser) { url ->
-                        val listHeadingStyle = semantic.ui.dividing.header
-                        val pageHeading = h1(listHeadingStyle).text("Shopping list")
                         div(semantic.content).new {
+                            
                             render(url.path[0]) { entityType ->
-                                logger.info("Rendering entity type $entityType")
                                 when (entityType) {
                                     ROOT_PATH -> {
                                         createNewListAndRedirect(url.path)
                                     }
                                     "lists" -> {
-                                        logger.info("Rendering lists/${url.path[1]}")
                                         render(url.path[1]) { listUid ->
                                             try {
                                                 val list = asBindable(State.lists, listUid)
@@ -72,7 +73,7 @@ Here we create a simple "todo" list app:
                                         }
                                     }
                                     else -> {
-                                        throw NotFoundException("Unrecognized entity type '$entityType'")
+                                        throw NotFoundException("Unrecognized entity type '$entityType', path: ${url.path.value}")
                                     }
                                 }
                             }
@@ -81,8 +82,8 @@ Here we create a simple "todo" list app:
                 }
             }
         }
+    }
+    Thread.sleep(10000)
+}
 ```
-
-You can find the full todoApp app [here](https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo).
-
 **Next: [Setting Up]({{ site.baseurl }}{% post_url 2017-03-03-getting-started %}) >>>>**
