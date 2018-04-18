@@ -27,8 +27,7 @@ For [Gradle](http://www.gradle.org/) users, add this to the repositories section
   repositories {
     // ...
     maven { url 'https://jitpack.io' }
-    maven { url "http://dl.bintray.com/kotlin/kotlin-eap-1.1" }
-    maven {url "http://dl.bintray.com/kotlin/ktor"}
+    maven {url "https://kotlin.bintray.com/ktor"}
     }
 ```
 
