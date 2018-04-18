@@ -3,8 +3,6 @@ layout: default
 title: "Introduction to Kweb"
 ---
 
-#### What is Kweb?
-
 Kweb is a library for building web applications in the [Kotlin](http://kotlinlang.org/) programming language.
 
 Kweb is fairly unusual in that, while your code runs on the server, Kweb allows you to interact to the browser DOM directly as if it was local to the web server. 
