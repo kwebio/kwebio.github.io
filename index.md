@@ -3,9 +3,6 @@ layout: default
 title: "Introduction to Kweb"
 ---
 
-1. TOC
-{:toc}
-
 #### What is Kweb?
 
 Kweb is a library for building web applications in the [Kotlin](http://kotlinlang.org/) programming language.
@@ -23,7 +20,9 @@ Kweb has plugins for JavaScript libraries like [JQuery](https://jquery.com/) and
 surprisingly easy to build your own plugins for other JavaScript libraries, or extend those Kweb already
 supports.
 
+
 #### Features
+
 * Build websites in Kotlin
 * Makes the barrier between web-browser and web-server largely invisible to the programmer
 * Seamlessly integrates with powerful JavaScript libraries like JQuery, Semantic-UI, and others
@@ -32,12 +31,15 @@ supports.
 * Easy to add to an existing project, Kweb is just a library, it doesn't seek to tell you how your project should
   be organized
 
+
 #### How does it work?
+
 Kweb keeps all of the logic server-side, and uses efficient websockets to communicate to web 
 browsers. We also take advantage of Kotlin's powerful new coroutines mechanism to efficiently handle
 asynchronicity, largly invisibly to the programmer.
 
-#### What does it look like?
+
+#### Can I see an example?
 
 Here is the main code for a simple to-do list app, find the full app [here](https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo):
 
