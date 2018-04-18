@@ -44,18 +44,23 @@ Here is the main code for a simple to-do list app, find the full app [here](http
 ```kotlin
 // Starts a web server listening on port 8091
 Kweb(port = 8091, debug = true, plugins = listOf(semanticUIPlugin)) {
+
     doc.body.new {
         div(Style.outerContainer).new {
             div(Style.innerContainer).new {
+            
                 route(withGalimatiasUrlParser) { url ->
                     val pageHeading = h1(Style.listHeadingStyle).text("Shopping list")
                     div(semantic.content).new {
+                    
                         render(url.path[0]) { entityType ->
                             logger.info("Rendering entity type $entityType")
                             when (entityType) {
+                            
                                 ROOT_PATH -> {
                                     createNewListAndRedirect(url.path)
                                 }
+                                
                                 "lists" -> {
                                     logger.info("Rendering lists/${url.path[1]}")
                                     render(url.path[1]) { listUid ->
@@ -67,13 +72,17 @@ Kweb(port = 8091, debug = true, plugins = listOf(semanticUIPlugin)) {
                                         }
                                     }
                                 }
+                                
                                 else -> {
                                     throw NotFoundException("Unrecognized entity type '$entityType', path: ${url.path.value}")
                                 }
+                                
                             }
                         }
+                        
                     }
                 }
+                
             }
         }
     }
