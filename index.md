@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Introduction to Kweb"
+title: "Build rich live-updating web apps in pure server-side Kotlin"
 ---
 
 Kweb is a library for building web applications in the [Kotlin](http://kotlinlang.org/) programming language.
