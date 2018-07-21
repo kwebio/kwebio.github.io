@@ -43,14 +43,12 @@ Here is the main code for a simple to-do list app, find the full app [here](http
 
 ```kotlin
 fun main(args: Array<String>) {
-    /** Starts a web server listening on http://localhost:8091/.
-     */
-
     /** A simple yet flexible plugin mechanism */
     val plugins = listOf(semanticUIPlugin)
 
     /** Create a Kweb instance, and configure it to use the Semantic
-     * UI framework. Build a simple to-do list app.
+     * UI framework. Build a simple to-do list app listening on
+     * http://localhost:8091/
      * */
     Kweb(port = 8091, debug = true, plugins = plugins) {
         doc.body.new {
@@ -68,17 +66,17 @@ fun main(args: Array<String>) {
                     as you'll see below. */
                 val url: KVar<URL> = doc.receiver.url(simpleUrlParser)
 
-                /** s.content uses the semanticUIPlugin to use the excellent 
-                    Semantic UI framework, included as a plugin above, and implemented 
+                /** s.content uses the semanticUIPlugin to use the excellent
+                    Semantic UI framework, included as a plugin above, and implemented
                     as a convenient DSL within Kweb */
                 div(s.content).new {
 
-                    /** Note how url.path[0] is itself a KVar.  Changes to firstPathElement 
-                        will automatically propagate _bi-directionally_ with `url`.  This 
+                    /** Note how url.path[0] is itself a KVar.  Changes to firstPathElement
+                        will automatically propagate _bi-directionally_ with `url`.  This
                         comes in very handy later. */
                     val firstPathElement: KVar<String> = url.path[0]
 
-                    /** Renders `firstPathElement`, but - and here's the fun part - will 
+                    /** Renders `firstPathElement`, but - and here's the fun part - will
                         automatically re-renderList if firstPathElement changes.  This is
                         a simple, elegant, and yet powerful routing mechanism. */
                     render(firstPathElement) { entityType ->
@@ -88,15 +86,15 @@ fun main(args: Array<String>) {
                                 url.path.value = listOf("lists", newListId)
                             }
                             "lists" -> {
-                                /** Renders can be nested, which means that only this 
-                                    specific part of the page must be re-rendered if 
-                                    url.path[1] changes, which is both incredibly convenient 
-                                    for the developer, and efficient, leading to a very 
+                                /** Renders can be nested, which means that only this
+                                    specific part of the page must be re-rendered if
+                                    url.path[1] changes, which is both incredibly convenient
+                                    for the developer, and efficient, leading to a very
                                     responsive webapp. */
                                 render(url.path[1]) { listId ->
                                     try {
-                                        /** Here we use the same render mechanism to tie DOM 
-                                            state to persistent state stored in Shoebox, 
+                                        /** Here we use the same render mechanism to tie DOM
+                                            state to persistent state stored in Shoebox,
                                             Kweb's simple but powerful key-value store with
                                             observer pattern support.  */
                                         renderList(toVar(State.lists, listId))
