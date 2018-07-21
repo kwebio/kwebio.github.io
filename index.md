@@ -5,7 +5,7 @@ title: "Build rich live-updating web apps in pure server-side Kotlin"
 
 Kweb is a library for building web applications in the [Kotlin](http://kotlinlang.org/) programming language that takes quite a unique approach.
 
-While your code runs on the server, Kweb allows you to interact to the browser DOM directly as if it was local to the web server.  This process is efficient, only sending the minimal DOM modifications necessary.  DOM fragments are also cached in the client for an extremely responsive UI, and events are conveyed seamlessly between client and server to maintain consistent state across both.
+Kweb allows you to interact to the browser DOM directly as if it was local to the web server.  This process is efficient, minimizing browser-server chatter and browser rendering overhead.  DOM fragments are also cached in the browser for an extremely responsive UI, and events are conveyed seamlessly between client and server to maintain consistent state across both.
 
 For example, here we create a `<p>` element and set its text:
 
