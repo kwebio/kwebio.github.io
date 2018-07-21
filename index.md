@@ -42,51 +42,38 @@ asynchronicity, largly invisibly to the programmer.
 Here is the main code for a simple to-do list app, find the full app [here](https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo):
 
 ```kotlin
-// Starts a web server listening on port 8091
-Kweb(port = 8091, debug = true, plugins = listOf(semanticUIPlugin)) {
+    // Starts a web server listening on port 8091
+    Kweb(port = 8091, debug = true, plugins = listOf(semanticUIPlugin)) {
+        doc.body.new {
 
-    doc.body.new {
-        div(Style.outerContainer).new {
-            div(Style.innerContainer).new {
-            
-                route(withGalimatiasUrlParser) { url ->
-                    val pageHeading = h1(Style.listHeadingStyle).text("Shopping list")
-                    div(semantic.content).new {
-                    
-                        render(url.path[0]) { entityType ->
-                            logger.info("Rendering entity type $entityType")
-                            when (entityType) {
-                            
-                                ROOT_PATH -> {
-                                    createNewListAndRedirect(url.path)
-                                }
-                                
-                                "lists" -> {
-                                    logger.info("Rendering lists/${url.path[1]}")
-                                    render(url.path[1]) { listUid ->
-                                        try {
-                                            val list = asBindable(State.lists, listUid)
-                                            renderList(list)
-                                        } catch (e : NoSuchElementException) {
-                                            throw NotFoundException("Can't find list with id $listUid")
-                                        }
+            pageBorderAndTitle("Todo List") {
+
+                val url = doc.receiver.url(simpleUrlParser)
+
+                div(s.content).new {
+                    render(url.path[0]) { entityType ->
+                        when (entityType) {
+                            ROOT_PATH -> {
+                                val newListId = createNewList()
+                                url.path.value = listOf("lists", newListId)
+                            }
+                            "lists" -> {
+                                render(url.path[1]) { listId ->
+                                    try {
+                                        render(toVar(State.lists, listId))
+                                    } catch (e: NoSuchElementException) {
+                                        throw NotFoundException("Can't find list with id $listId")
                                     }
                                 }
-                                
-                                else -> {
-                                    throw NotFoundException("Unrecognized entity type '$entityType', path: ${url.path.value}")
-                                }
-                                
+                            }
+                            else -> {
+                                throw NotFoundException("Unrecognized entity type '$entityType', path: ${url.path.value}")
                             }
                         }
-                        
                     }
                 }
-                
             }
         }
     }
-}
-}
 ```
 **Next: [Setting Up]({{ site.baseurl }}{% post_url 2017-03-03-getting-started %}) >>>>**
