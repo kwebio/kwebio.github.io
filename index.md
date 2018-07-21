@@ -3,9 +3,9 @@ layout: default
 title: "Build rich live-updating web apps in pure server-side Kotlin"
 ---
 
-Kweb is a library for building web applications in the [Kotlin](http://kotlinlang.org/) programming language.
+Kweb is a library for building web applications in the [Kotlin](http://kotlinlang.org/) programming language that takes quite a unique approach.
 
-Kweb is fairly unusual in that, while your code runs on the server, Kweb allows you to interact to the browser DOM directly as if it was local to the web server. 
+While your code runs on the server, Kweb allows you to interact to the browser DOM directly as if it was local to the web server.  This process is efficient, only sending the minimal DOM modifications necessary.  DOM fragments are also cached in the client for an extremely responsive UI, and events are conveyed seamlessly between client and server to maintain consistent state across both.
 
 For example, here we create a `<p>` element and set its text:
 
@@ -23,11 +23,12 @@ supports.
 
 * Build websites in Kotlin
 * Makes the barrier between web-browser and web-server largely invisible to the programmer
-* Seamlessly integrates with powerful JavaScript libraries like JQuery, Semantic-UI, and others
-* Update your web browser instantly in response to code changes
+* Combines surprising convenience for the programmer with efficiency under the hood, minimizing client-server chatter and browser render times
+* Seamlessly integrates with powerful JavaScript libraries like [Semantic UI](https://semantic-ui.com/) (for which we have a Kweb plugin offering a fairly comprehensive Semantic UI DSL)
 * Bind DOM elements in the browser directly to persistent state on the server and have them update automatically, through the [observer](https://en.wikipedia.org/wiki/Observer_pattern) and [data mapper](https://en.m.wikipedia.org/wiki/Data_mapper_pattern) patterns, using the [Shoebox](https://github.com/kwebio/shoebox) persistent state store.
 * Easy to add to an existing project, Kweb is just a library, it doesn't seek to tell you how your project should
   be organized
+* Update your web browser instantly in response to code changes
 
 
 #### How does it work?
