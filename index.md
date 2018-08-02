@@ -43,7 +43,7 @@ asynchronicity, largly invisibly to the programmer.
 Here is the main code for a simple to-do list app, find the full app [here](https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo):
 
 ```kotlin
-{
+fun main(args : Array<String>) { 
     /** A simple yet flexible plugin mechanism */
     val plugins = listOf(semanticUIPlugin)
 
