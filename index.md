@@ -22,6 +22,7 @@ fun main(args : Array<String>) {
     Kweb(port = 8091) {
         doc.body.p().text("Hello world with Kweb!")
     }
+}
 ```
 
 Kweb has plugins for JavaScript libraries like [JQuery](https://jquery.com/) and 
