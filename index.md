@@ -18,9 +18,14 @@ Kweb allows you to interact to the browser DOM directly as if it was local to th
 For example, here we create a `<p>` element and set its text:
 
 ```kotlin
-fun main(args : Array<String>) { 
+import io.kweb.*
+import io.kweb.dom.element.*
+
+fun main(args : Array<String>) {
     Kweb(port = 8091) {
-        doc.body.p().text("Hello world with Kweb!")
+        doc.body.new {
+            p().text("Hello world with Kweb!")
+        }
     }
 }
 ```
