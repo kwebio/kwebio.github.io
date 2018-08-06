@@ -3,6 +3,14 @@ layout: default
 title: "Build rich live-updating web apps in pure server-side Kotlin"
 ---
 
+#### Why another web framework, aren't there already too many to choose from?
+
+Let's say you're fairly comfortable with the Kotlin/Java ecosystem, you need to build a rich web application that looks like it belongs in 2018, but you really don't feel like grappling with the massive and complex JavaScript ecosystem.
+
+I've seen this too many times, and so I decided to fix it, and Kweb is the result of that ongoing endeavor.
+
+#### So what is Kweb?
+
 Kweb is a library for building web applications in the [Kotlin](http://kotlinlang.org/) programming language that takes quite a unique approach.
 
 Kweb allows you to interact to the browser DOM directly as if it was local to the web server.  This process is efficient, minimizing browser-server chatter and browser rendering overhead.  DOM fragments are also cached in the browser for an extremely responsive UI, and events are conveyed seamlessly between client and server to maintain consistent state across both.
@@ -10,7 +18,10 @@ Kweb allows you to interact to the browser DOM directly as if it was local to th
 For example, here we create a `<p>` element and set its text:
 
 ```kotlin
-doc.body.p().text("this is an example HTML paragraph")
+fun main(args : Array<String>) { 
+    Kweb(port = 8091) {
+        doc.body.p().text("Hello world with Kweb!")
+    }
 ```
 
 Kweb has plugins for JavaScript libraries like [JQuery](https://jquery.com/) and 
@@ -19,7 +30,7 @@ surprisingly easy to build your own plugins for other JavaScript libraries, or e
 supports.
 
 
-#### Features
+#### Kweb's Features
 
 * Build websites in Kotlin
 * Makes the barrier between web-browser and web-server largely invisible to the programmer
