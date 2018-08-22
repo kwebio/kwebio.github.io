@@ -13,12 +13,12 @@ js:
 
 ### What you should know
 
-Kweb is built on [Kotlin 1.1](http://kotlinlang.org/), you should have some familiarity to Kotlin
+Kweb is built on [Kotlin](http://kotlinlang.org/), you should have some familiarity to Kotlin
 and the Java ecosystem on which it's built.
 
 ### Adding a Kweb dependency
 
-The Kweb library is distributed via [JitPack](https://jitpack.io/#sanity/kweb), it can be added
+The Kweb library is distributed via [JitPack](https://jitpack.io/#kwebio/core), it can be added
 easily to any Kotlin project:
 
 #### Additions to build.gradle
@@ -36,10 +36,12 @@ Then add this to the dependencies section of your `build.gradle`:
 ```groovy
 dependencies {
   // ...
-  compile 'com.github.kwebio:kweb:MAVEN_VERSION_PLACEHOLDER'
-  compile 'org.slf4j:slf4j-simple:1.6.1' // <-- or your favorite SLF4J logger binding 
+  compile 'com.github.kwebio:core:MAVEN_VERSION_PLACEHOLDER'
+  compile 'org.slf4j:slf4j-simple:1.7.25' // <-- or your favorite SLF4J logger binding 
 }
 ```
+
+If you're using Maven or another build tool, check [here](https://jitpack.io/#kwebio/core) for instructions.
 
 ### Logging
 Kweb uses [SLF4J](https://www.slf4j.org/) for logging.  This is a "logging facade", it allows
