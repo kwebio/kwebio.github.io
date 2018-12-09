@@ -15,7 +15,7 @@ Kweb is a library for building web applications in the [Kotlin](http://kotlinlan
 
 Kweb allows you to interact to the browser DOM directly as if it was local to the web server.  This process is efficient, minimizing browser-server chatter and browser rendering overhead.  DOM fragments are also cached in the browser for an extremely responsive UI, and events are conveyed seamlessly between client and server to maintain consistent state across both.
 
-For example, here we create a `<p>` element and set its text:
+In this simple example we attach a click listener to a hyperlink:
 
 ```kotlin
 import io.kweb.Kweb
@@ -37,6 +37,8 @@ fun main(args : Array<String>) {
     }
 }
 ```
+
+The really cool thing here is that the counter is truly global and any change is automatically reflected in the user's browser without any additional plumbing:
 
 ![screencast](https://ucd85dd240dd59417cd50b8be5c5.previews.dropboxusercontent.com/p/orig/AAQXuHUmZuf9CYwe_s_gaZyo9bdhUgp29GAObXxmgWNVu0EBtI4JOcSaSIp88Sr-VnAL_6THqA4AqSZ516_zMhSAdUGPa3DfyuWmU6m1Za6tNMSsQfrh6JBJkU5xwvYniix9cSef9Kk5uZBUBa63SNPulK12oIMh70jX0b8S3kaxYM84Gmyw2Lg7ysQ6ordoUTKwhv6hGMpfExMXORzl5GpT/p.gif?size=1600x1200&size_mode=3)
 
