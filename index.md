@@ -38,10 +38,11 @@ fun main(args : Array<String>) {
 }
 ```
 
-The really cool thing here is that the counter is truly global and any change is automatically reflected in the user's browser without any additional plumbing:
+The really cool thing here is that the counter is truly global and any change is automatically reflected in the user's browser:
 
 ![screencast](https://ucd85dd240dd59417cd50b8be5c5.previews.dropboxusercontent.com/p/orig/AAQXuHUmZuf9CYwe_s_gaZyo9bdhUgp29GAObXxmgWNVu0EBtI4JOcSaSIp88Sr-VnAL_6THqA4AqSZ516_zMhSAdUGPa3DfyuWmU6m1Za6tNMSsQfrh6JBJkU5xwvYniix9cSef9Kk5uZBUBa63SNPulK12oIMh70jX0b8S3kaxYM84Gmyw2Lg7ysQ6ordoUTKwhv6hGMpfExMXORzl5GpT/p.gif?size=1600x1200&size_mode=3)
 
+This is just a simple example, but the paradigm scales up nicely.
 
 #### Kweb's Features
 
