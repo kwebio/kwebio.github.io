@@ -11,7 +11,7 @@ Kweb allows you to interact to the browser DOM directly as if it was local to th
 
 In this simple example we attach a click listener to a hyperlink which increments a global click counter.  Note how the counter is truly global, and changes to it propagate *automatically* to browsers:
 
-![screencast]({{ site.url }}/assets/screencast-1.gif)
+![screencast](http://kweb.io/assets/screencast-1.gif)
 
 This is just a simple example, but the paradigm scales up nicely.
 
