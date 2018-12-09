@@ -27,7 +27,8 @@ This is just a simple example, but the paradigm scales up nicely.
 * Makes the barrier between web-browser and web-server largely invisible to the programmer
 * Combines surprising convenience for the programmer with efficiency under the hood, minimizing client-server chatter and browser render times
 * Seamlessly integrates with powerful JavaScript libraries like [Semantic UI](https://semantic-ui.com/) (for which we have a Kweb plugin offering a fairly comprehensive Semantic UI DSL)
-* Bind DOM elements in the browser directly to persistent state on the server and have them update automatically, through the [observer](https://en.wikipedia.org/wiki/Observer_pattern) and [data mapper](https://en.m.wikipedia.org/wiki/Data_mapper_pattern) patterns, using the [Shoebox](https://github.com/kwebio/shoebox) persistent state store.
+* Bind DOM elements in the browser directly to state on the server and have them update automatically, through the [observer](https://en.wikipedia.org/wiki/Observer_pattern) and [data mapper](https://en.m.wikipedia.org/wiki/Data_mapper_pattern) patterns
+* This integrates seamlessly with the [Shoebox](https://github.com/kwebio/shoebox) observable datastore
 * Easy to add to an existing project, Kweb is just a library, it doesn't seek to tell you how your project should
   be organized
 * Update your web browser instantly in response to code changes
