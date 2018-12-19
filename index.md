@@ -11,7 +11,7 @@ Kweb allows you to interact to the browser DOM directly as if it was local to th
 
 In this simple example we attach a click listener to a hyperlink which increments a global click counter.  Note how the counter is truly global, and changes to it propagate *automatically* to browsers:
 
-<img src="http://kweb.io/assets/screencast-1.gif" align="middle" width="80%" />
+<img src="http://kweb.io/assets/screencast-1.gif" style="text-align: center;" width="80%" />
 
 This is just a simple example, but the paradigm scales up nicely.
 
