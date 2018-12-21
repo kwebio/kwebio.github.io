@@ -7,6 +7,8 @@ title: "Build rich live-updating web apps in pure server-side Kotlin"
 
 **19th December, 2018:** Started work on [docs.kweb.io](https://docs.kweb.io/) - which will be the main source of documentation for Kweb.  Please check it out, feedback welcome.
 
+**11th December, 2018:** Received some [attention](https://www.reddit.com/r/webdev/comments/a54i7u/hacker_news_discussion_kweb_a_new_approach_to/) on the webdev subreddit.
+
 **9th December, 2018:** Received some [attention](https://news.ycombinator.com/item?id=18638430) on HackerNews.
 
 **8th December, 2018:** Received some [attention](https://www.reddit.com/r/programming/comments/a4dtp2/kweb_a_new_approach_to_building_rich_webapps_in/) on the programming subreddit.
