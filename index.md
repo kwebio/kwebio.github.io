@@ -3,7 +3,7 @@ layout: default
 title: "Build rich live-updating web apps in pure server-side Kotlin"
 ---
 
-#### News
+#### Recent News
 
 **19th December, 2018:** Started work on [docs.kweb.io](https://docs.kweb.io/) - which will be the main source of documentation for Kweb.  Please check it out, feedback welcome.
 
