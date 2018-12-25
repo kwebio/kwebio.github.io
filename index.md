@@ -5,7 +5,7 @@ title: "The Contrarian Web Framework"
 
 #### Recent News
 
-**19th December, 2018:** Started work on [docs.kweb.io](https://docs.kweb.io/) - which will be the main source of documentation for Kweb.  Please check it out, feedback welcome.
+**19th December, 2018:** Started work on [docs.kweb.io](https://docs.kweb.io/en/latest/intro.html) - which will be the main source of documentation for Kweb.  Please check it out, feedback welcome.
 
 **11th December, 2018:** Received some [attention](https://www.reddit.com/r/webdev/comments/a54i7u/hacker_news_discussion_kweb_a_new_approach_to/) on the webdev subreddit.
 
