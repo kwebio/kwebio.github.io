@@ -11,8 +11,6 @@ title: "Build rich live-updating web apps in pure server-side Kotlin"
 
 **9th December, 2018:** Received some [attention](https://news.ycombinator.com/item?id=18638430) on HackerNews.
 
-**8th December, 2018:** Received some [attention](https://www.reddit.com/r/programming/comments/a4dtp2/kweb_a_new_approach_to_building_rich_webapps_in/) on the programming subreddit.
-
 #### What is Kweb?
 
 Kweb is a library for building web applications in the [Kotlin](http://kotlinlang.org/) programming language, that virtually eliminates the separation between browser and server from the programmer's perspective.
