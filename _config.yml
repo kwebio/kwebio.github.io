@@ -1,6 +1,6 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'Kweb'
-subtitle: 'Build rich live-updating web apps in pure server-side Kotlin'
+subtitle: 'The Contrarian Web Framework'
 
 # if you wish to integrate disqus on pages set your shortname here
 disqus_shortname: ''
