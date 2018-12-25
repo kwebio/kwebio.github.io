@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Build rich live-updating web apps in pure server-side Kotlin"
+title: "The Contrarian Web Framework"
 ---
 
 #### Recent News
