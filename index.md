@@ -17,6 +17,6 @@ Kweb is a library for building web applications in the [Kotlin](http://kotlinlan
 
 In this simple example we attach a click listener to a hyperlink which increments a global click counter.  Note how the counter is truly global, and changes to it propagate *automatically* to browsers:
 
-<img src="http://kweb.io/assets/screencast-1.gif" width="100%" />
+<img src="/assets/screencast-1.gif" width="100%" />
 
 **[Learn More...](https://docs.kweb.io/en/latest/intro.html)**
