@@ -1,22 +1,8 @@
 ---
 layout: default
-title: "The Contrarian Web Framework"
+title: "The Easier Way to Website"
 ---
 
-#### Recent News
-
-**19th December, 2018:** Started work on [docs.kweb.io](https://docs.kweb.io/en/latest/intro.html) - which will be the main source of documentation for Kweb.  Please check it out, feedback welcome.
-
-**11th December, 2018:** Received some [attention](https://www.reddit.com/r/webdev/comments/a54i7u/hacker_news_discussion_kweb_a_new_approach_to/) on the webdev subreddit.
-
-**9th December, 2018:** Received some [attention](https://news.ycombinator.com/item?id=18638430) on HackerNews.
-
-#### What is Kweb?
-
-Kweb is a library for building web applications in the [Kotlin](http://kotlinlang.org/) programming language, that virtually eliminates the separation between browser and server from the programmer's perspective.
-
-In this simple example we attach a click listener to a hyperlink which increments a global click counter.  Note how the counter is truly global, and changes to it propagate *automatically* to browsers:
-
-<img src="/assets/screencast-1.gif" width="100%" />
-
-**[Learn More...](https://docs.kweb.io/en/latest/intro.html)**
+* [User Manual](https://docs.kweb.io/)
+* [Source](https://github.com/kwebio/core)
+* [Help/Discussion](https://gitter.im/kwebio/Lobby)
