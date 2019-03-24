@@ -56,4 +56,6 @@ redcarpet:
         'hardwrap'
     ]
 
-gems: [jekyll_github_sample]
+gems: 
+  - jekyll_github_sample
+  - jekyll-redirect-from
