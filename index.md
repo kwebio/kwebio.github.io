@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "The Easier Way to Website"
-redirect_to: "https://docs.kweb.io/"
+redirect_to: "http://docs.kweb.io/en/latest/intro.html"
 ---
 
 Kweb - a Kotlin web framework
