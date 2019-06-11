@@ -6,6 +6,8 @@ order: 2
 date: 2017-03-08 10:34:51
 ---
 
+### This page is obsolete, please refer to https://docs.kweb.io/
+
 Add a file like the following to your project:
 
 ```kotlin
